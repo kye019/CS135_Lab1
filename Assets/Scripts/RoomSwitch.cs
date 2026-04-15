@@ -19,6 +19,18 @@ public class RoomSwitch : MonoBehaviour
             transform.position = new UnityEngine.Vector3(60, 1, 0);
             GetComponent<CharacterController>().enabled = true;
         }
+        if (Input.GetKeyDown("1"))
+        {
+            GetComponent<CharacterController>().enabled = false;
+            transform.position = new UnityEngine.Vector3(0, 1, 0);
+            GetComponent<CharacterController>().enabled = true;
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            GetComponent<CharacterController>().enabled = false;
+            transform.position = new UnityEngine.Vector3(-75, 1, 0);
+            GetComponent<CharacterController>().enabled = true;
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             #if UNITY_EDITOR
